@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/music.png">
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div id="music-player">
+    
+      <h4>PLAYING <span id="music-number">1</span>  of 3 </h4>
+      
+      <div class="img-container">
+        <img src="images/ukulele.jpg" alt="music-cover" id="cover" />
+      </div><br>
+
+      <div class="music-container" id="music-container">
+        <div class="music-info">
+          <h1 id="title">Ukulele</h1>
+          <h3>Benjamin Tissot</h3>
+          
+        </div>
+
+        <audio src="music/ukulele.mp3" id="audio"></audio>
+
+        
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fa fa-step-backward" ></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="fa fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fa fa-step-forward"></i>
+          </button>
+        </div><br>
+            
+        
+        
+      
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+          
+        </div>
+        <div class="slider_container">
+          <i class="fa fa-volume-down"></i>
+          <input type="range" min="1" max="100"
+            value="70" class="volume_slider" onchange="setVolume()">
+          <i class="fa fa-volume-up"></i>
+        </div>
+      </div>
+
+
+        
+        
+    </div>
+    
+    
+    <script src="script.js"></script>
+  </body>
+</html>
